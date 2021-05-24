@@ -38,9 +38,9 @@ resource "aws_security_group" "instance-web" {
   name = "Terraform-EC2-Web"
 
   ingress {
-    from_port   = var.port
+    from_port   = var.port_web
     protocol    = "tcp"
-    to_port     = var.port
+    to_port     = var.port_web
     cidr_blocks = ["0.0.0.0/0"]
   }
 
